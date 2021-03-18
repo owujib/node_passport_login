@@ -13,6 +13,10 @@ require('./config/passport')(passport);
 
 // DB Config
 
+/**
+ * added by owujib
+ * this checks for node env a switches
+ *  **/
 let db;
 if (process.env.NODE_ENV === 'development') {
   console.log(process.env.NODE_ENV);
